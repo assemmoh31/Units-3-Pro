@@ -15,7 +15,7 @@ const Home: React.FC = () => {
     "url": window.location.origin,
     "potentialAction": {
       "@type": "SearchAction",
-      "target": `${window.location.origin}/#/?q={search_term_string}`,
+      "target": `${window.location.href.split('#')[0]}#/?q={search_term_string}`,
       "query-input": "required name=search_term_string"
     }
   };
