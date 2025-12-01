@@ -108,7 +108,7 @@ const TechLayout: React.FC<TechLayoutProps & { history: TechHistoryItem[], onCle
                     history.map((item) => (
                        <div key={item.id} className="bg-slate-50 dark:bg-slate-900/50 p-3 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
                           <div className="flex justify-between items-start mb-1">
-                             <span className="font-bold text-indigo-600 dark:text-indigo-400">> {item.title}</span>
+                             <span className="font-bold text-indigo-600 dark:text-indigo-400">&gt; {item.title}</span>
                              <span className="text-slate-400 text-[10px]">{item.timestamp}</span>
                           </div>
                           <div className="text-slate-500 dark:text-slate-400 mb-2 truncate">
